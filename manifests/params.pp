@@ -26,7 +26,10 @@ class libvirt::params {
       $sysconfig = false
       $defaults_file = '/etc/default/libvirt-bin'
       $defaults_template = "${module_name}/default/libvirt-bin.erb"
-      $deb_default = {}
+      $deb_default = $::service_provider ? {
+        'systemd' => { 'libvirtd_opts' => '' },  # no '-d', it confuses systemd
+        default   => {},
+      }
       # UNIX socket
       $auth_unix_ro = 'none'
       $unix_sock_rw_perms = '0770'
