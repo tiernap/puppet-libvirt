@@ -1,12 +1,12 @@
 {
-  "name": "thias-libvirt",
+  "name": "petems-libvirt",
   "version": "1.0.0",
-  "author": "Matthias Saou",
+  "author": ["Peter Souter", "Matthias Saou"],
   "license": "Apache-2.0",
   "summary": "Libvirt virtualization API and capabilities.",
-  "source": "git://github.com/thias/puppet-libvirt",
-  "project_page": "https://github.com/thias/puppet-libvirt",
-  "issues_url": "https://github.com/thias/puppet-libvirt/issues",
+  "source": "git://github.com/petems/puppet-libvirt",
+  "project_page": "https://github.com/petems/puppet-libvirt",
+  "issues_url": "https://github.com/petems/puppet-libvirt/issues",
   "tags": ["libvirt", "kvm", "qemu", "virtualization"],
   "operatingsystem_support": [
     {
