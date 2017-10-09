@@ -52,6 +52,7 @@ class libvirt::params {
       $radvd_package = 'radvd'
       $sysconfig = false
       $deb_default = false
+      $unix_sock_dir = '/var/run/libvirt'
     }
   }
 
